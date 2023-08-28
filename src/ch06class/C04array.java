@@ -10,6 +10,7 @@ public class C04array {
         System.out.println("a[0] = " + a[0]);
 
     }
+
     public static int[] method1() {
         int[] k = {22, 33};
         return k;
