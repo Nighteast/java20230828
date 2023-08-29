@@ -18,6 +18,7 @@ public class C07method {
 }
 
 class MyClass07 {
+    //field + method = member
     //field
     String name;
 
