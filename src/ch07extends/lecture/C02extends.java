@@ -2,7 +2,7 @@ package ch07extends.lecture;
 
 public class C02extends {
     public static void main(String[] args) {
-        MySubClass02 o1 = new MySubClass02();
+        MySubClass021 o1 = new MySubClass021();
         System.out.println("o1.name = " + o1.name);
         o1.name = "spring";
         o1.method3();
@@ -20,6 +20,11 @@ class MyClass02 {
     }
 }
 
-class MySubClass02 extends MyClass02 {
+class MySubClass021 extends MyClass02 {
 
 }
+
+/*
+* MyClass02 : 상위 클래스, 부모 클래스, Super class
+* MySubClass021 : 하위 클래스, 자식 클래스, Sub class
+* */
