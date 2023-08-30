@@ -25,3 +25,11 @@ class Solution2 {
         return (n + 6) / 7;
     }
 }
+
+class Solution3 { //문자열 뒤집기
+    public String solution(String my_string) {
+        StringBuilder sb = new StringBuilder(my_string);
+        String answer = String.valueOf(sb.reverse());
+        return answer;
+    }
+}
