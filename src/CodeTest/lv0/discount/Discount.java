@@ -11,12 +11,9 @@ public class Discount {
 
 class Solution {
     public int solution(int price) {
-        if (300000 > price && price >= 100000)
-            return (int) (price * 0.95);
-        else if (500000 > price && price >= 300000)
-            return (int) (price * 0.90);
-        else if (price >= 500000)
-            return (int) (price * 0.80);
+        if (300000 > price && price >= 100000) return (int) (price * 0.95);
+        if (500000 > price && price >= 300000) return (int) (price * 0.90);
+        if (price >= 500000) return (int) (price * 0.80);
         return price;
     }
 }
