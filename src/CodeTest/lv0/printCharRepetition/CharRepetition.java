@@ -48,4 +48,15 @@ class Solution {
  *              Returns a string whose value is the concatenation of this string repeated count times.
  *              If this string is empty or count is zero then the empty string is returned.
  *      -> answer.append((tmp + "").repeat(n))  // (tmp + "")로 String으로 변환시켜 repeat사용
+ * 3. 배열의 경우 for each 문을 사용하여 더 요약할 수 있다.
+ *
+ *  위를 사용하여 짧게 줄이면 이렇게 될 수 있다.
+ *     class Solution {
+ *     public String solution(String my_string, int n) {
+ *         StringBuilder answer = new StringBuilder();
+ *         for (char c : my_string.toCharArray())
+ *             answer.append(String.valueOf(c).repeat(n));
+ *         return answer.toString();
+ *     }
+ * }
  */
