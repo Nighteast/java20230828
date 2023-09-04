@@ -1,6 +1,6 @@
 package ch16lambda.lecture;
 
-public class C021lambda {
+public class C02lambda {
     public static void main(String[] args) {
         // lambda
         // ( 파라미터 목록 ) -> { 메서드 몸통 };
