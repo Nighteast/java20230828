@@ -13,7 +13,7 @@ public class Example {
     }
 
     public static void main(String[] args) {
-        double result = calc((x,y) -> (x/y));
+        double result = calc((x, y) -> (x / y));
         System.out.println("result = " + result);
     }
 }
