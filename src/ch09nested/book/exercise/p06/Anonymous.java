@@ -15,8 +15,11 @@ public class Anonymous {
                 System.out.println("승용차가 달립니다.");
             }
         };
-
         localVar.run();
+
+        Vehicle localVar2 = () -> System.out.println("승용차가 달립니다.2");
+        localVar2.run();
+
     }
 
     void method2(Vehicle v) {
