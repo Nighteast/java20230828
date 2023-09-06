@@ -58,6 +58,39 @@ public class C18regex {
         System.out.println("dooog".matches("do+g"));       //true
         System.out.println("doooog".matches("do+g"));       //true
 
+        // 문자 분류 (Character classes)
+        System.out.println("dog".matches("d[oi]g"));   //true
+        System.out.println("dig".matches("d[oi]g"));   //true
+        System.out.println("dag".matches("d[oi]g"));   //false
+
+        System.out.println("dog".matches("d[^oi]g"));   //false
+        System.out.println("dig".matches("d[^oi]g"));   //false
+        System.out.println("dag".matches("d[^oi]g"));   //true
+        System.out.println("dbg".matches("d[^oi]g"));   //true
+
+        System.out.println("dag".matches("d[a-z]g"));   //true
+        System.out.println("dbg".matches("d[a-z]g"));   //true
+        System.out.println("dcg".matches("d[a-z]g"));   //true
+        System.out.println("dhg".matches("d[a-z]g"));   //true
+
+        // 문자 분류 기호
+        System.out.println("0".matches("[0-9]"));   //true
+        System.out.println("7".matches("[0-9]"));   //true
+        System.out.println("0".matches("\\d"));     //true
+        System.out.println("7".matches("\\d"));     //true
+
+        System.out.println("a".matches("[a-zA-Z_0]"));  //true
+        System.out.println("_".matches("\\w"));         //true
+        System.out.println("8".matches("\\w"));         //true
+
+        // 예제 : 숫자로 시작하면 안되고, 영문대소문자, _, $ 만 가능
+        String pattern = "[a-zA-z_$][a-zA-Z_$0-9]*";
+        System.out.println("abc".matches("^\\d[a-zA-Z_0-9$]*"));
+        System.out.println("pattern_1".matches(pattern));   //true
+        System.out.println("_".matches(pattern));           //true
+        System.out.println("$".matches(pattern));           //true
+        System.out.println("4".matches(pattern));           //false
+
     }
 }
 
