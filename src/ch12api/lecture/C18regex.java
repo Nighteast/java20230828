@@ -105,6 +105,40 @@ public class C18regex {
         System.out.println("010-9999-9999".matches(pattern2));
         System.out.println("02-999-9999".matches(pattern2));
 
+        // 모든 문자 : .
+        System.out.println(" ".matches("."));
+        System.out.println("0".matches("."));
+        System.out.println("a".matches("."));
+        System.out.println("+".matches("."));
+        System.out.println("...".matches(".*"));
+
+        // . : \.
+        System.out.println(" ".matches("\\."));
+        System.out.println("0".matches("\\."));
+        System.out.println("a".matches("\\."));
+        System.out.println("+".matches("\\."));
+        System.out.println("...".matches("\\.*"));
+
+        // 이메일 패턴
+        // 영문소문자, 숫자가 여러개 @ 영문소문자, 숫자 여러개 . 영문소문자, 숫자 여러개
+        String email = "[a-z0-9]+\\@[a-z0-9]+\\.[a-z0-9]+";
+
+        System.out.println("jung9999@nave2r.c22om".matches(email));
+        System.out.println("jung9999nave2r.c22om".matches(email));
+        System.out.println("jung9999@nave2rc22om".matches(email));
+        System.out.println("jung9999@nave2r.".matches(email));
+
+        // or : | (pipe)
+        System.out.println("awdasdogawdsa".matches(".*dog.*"));
+        System.out.println("awdascatawdsa".matches(".*cat.*"));
+        System.out.println("awdasdogawdsa".matches(".*(dog|cat).*"));
+        System.out.println("awdascatawdsa".matches(".*(dog|cat).*"));
+
+
+
+
+
+
     }
 }
 
