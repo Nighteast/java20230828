@@ -8,9 +8,8 @@ public class Candies {
 
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        Boolean[] answer = new Boolean[candies.length];
         List<Boolean> list = new ArrayList<>();
-        list.add(answer);
+
 
 
         return list;
