@@ -1,4 +1,4 @@
-package CodeTest.lv0.RemovingVowels;
+package CodeTest.Programers.lv0.RemovingVowels;
 
 public class RemovingVowels {
     public static void main(String[] args) {

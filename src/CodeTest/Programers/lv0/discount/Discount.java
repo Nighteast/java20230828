@@ -1,4 +1,4 @@
-package CodeTest.lv0.discount;
+package CodeTest.Programers.lv0.discount;
 
 public class Discount {
     public static void main(String[] args) {

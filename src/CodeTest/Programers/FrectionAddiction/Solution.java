@@ -1,4 +1,4 @@
-package CodeTest.FrectionAddiction;
+package CodeTest.Programers.FrectionAddiction;
 
 class MainSolution {
     public static void main(String[] args) {

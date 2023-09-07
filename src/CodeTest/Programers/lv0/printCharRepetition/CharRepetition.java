@@ -1,6 +1,4 @@
-package CodeTest.lv0.printCharRepetition;
-
-import java.util.ArrayList;
+package CodeTest.Programers.lv0.printCharRepetition;
 
 public class CharRepetition {
     public static void main(String[] args) {
