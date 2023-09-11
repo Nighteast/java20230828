@@ -10,18 +10,18 @@ public class Solution1684 {
             allowedSet.add(c);
         }
 
-        int count = 0;
+        int result = 0;
 
         for (String s : words) {
-            int tmp = 1;
+            int count = 1;
             for (char c : s.toCharArray()) {
                 if (!allowedSet.contains(c)) {
-                    tmp = 0;
+                    count = 0;
                     break;
                 }
             }
-            count += tmp;
+            result += count;
         }
-        return count;
+        return result;
     }
 }
