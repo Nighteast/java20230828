@@ -5,12 +5,10 @@ import java.util.Set;
 
 public class Solution1684 {
     public int countConsistentStrings(String allowed, String[] words) {
-        // allowed : "ab"
         Set<Character> allowedSet = new HashSet<>();
         for (char c : allowed.toCharArray()) {
             allowedSet.add(c);
         }
-        // word : "ad"
 
         int count = 0;
 
@@ -24,7 +22,6 @@ public class Solution1684 {
             }
             count += tmp;
         }
-
         return count;
     }
 }
