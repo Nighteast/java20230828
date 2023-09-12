@@ -26,23 +26,15 @@ public class Solution844 {
                 stack2.push(c);
             }
         }
-        if (stack1.size() != stack2.size()) {
-            return false;
-        }
-        while (stack1.size() > 0) {
-            Character char1 = stack1.pop();
-            Character char2 = stack2.pop();
-            if (!char1.equals(char2)) {
-                return false;
-            }
-        }
 
-        return true;
+
+
+        return stack1.equals(stack2);
     }
 }
 
 
-/**
+/*
  * https://leetcode.com/problems/backspace-string-compare/
  * 문제 설계
  */

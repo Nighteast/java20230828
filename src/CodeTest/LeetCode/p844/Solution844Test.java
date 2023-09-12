@@ -12,6 +12,6 @@ class Solution844Test {
         assertEquals(true, o.backspaceCompare("ab#c", "ad#c"));
         assertEquals(true, o.backspaceCompare("ab##", "c#d#"));
         assertEquals(false, o.backspaceCompare("a#c", "b"));
-        assertEquals(false, o.backspaceCompare("a##c", "#a#c"));
+        assertEquals(true, o.backspaceCompare("a##c", "#a#c"));
     }
 }
