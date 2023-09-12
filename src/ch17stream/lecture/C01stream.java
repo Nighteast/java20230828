@@ -19,7 +19,7 @@ public class C01stream {
         // 최종연산 : terminal operation, 마지막 한번
 
         // 최종연산 후 stream 재사용 불가
-        // 최종연산 시 중간연산을 같이 처리함
+        // 최종연산 시 중간연산을 같이 처리함 -> 중간연산만 있다면 처리하지 않음.
 
         stream.limit(5);    // 중간연산
         stream.count();             // 최종연산
