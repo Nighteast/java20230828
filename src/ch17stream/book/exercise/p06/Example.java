@@ -16,12 +16,21 @@ public class Example {
         );
 
         // map 중간연산을 사용해서 Member의 나이들을 출력해보세요.
+        System.out.println("나이들만 출력");
         list.stream()
                 .map(x -> x.getAge())
                 .forEach(System.out::println);
 
+        // reduce를 사용하여
+        System.out.println("나이들의 합 구해서 출력");
+        Integer reduce = list.stream()
+                .map(Member::getAge)
+                .reduce(0, Integer::sum);
+        System.out.println("reduce = " + reduce);
+
+        // 기타
         double avg = list.stream()
-                .mapToInt(x -> x.getAge())
+                .mapToInt(Member::getAge)
                 .average().orElse(0);
         System.out.println("avg = " + avg);
     }
