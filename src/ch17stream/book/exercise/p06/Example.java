@@ -26,12 +26,26 @@ public class Example {
         Integer reduce = list.stream()
                 .map(Member::getAge)
                 .reduce(0, Integer::sum);
-        System.out.println("reduce = " + reduce);
+        System.out.println("나이 합 = " + reduce);
+
+        // 가장 많은 나이 reduce로 구해서 출력
+        System.out.println("가장 많은 나이 reduce로 구해서 출력");
+        Integer reduce1 = list.stream()
+                .map(Member::getAge)
+                .reduce(Integer.MIN_VALUE, Math::max);
+        System.out.println("왕고 = " + reduce1);
+
+        // 가장 작은 나이 reduce로 구해서 출력
+        System.out.println("가장 작은 나이 reduce로 구해서 출력");
+        Integer reduce2 = list.stream()
+                .map(Member::getAge)
+                .reduce(Integer.MAX_VALUE, Math::min);
+        System.out.println("막내 = " + reduce2);
 
         // 기타
         double avg = list.stream()
                 .mapToInt(Member::getAge)
                 .average().orElse(0);
-        System.out.println("avg = " + avg);
+        System.out.println("평균 = " + avg);
     }
 }
