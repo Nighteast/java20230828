@@ -47,5 +47,12 @@ public class Example {
                 .mapToInt(Member::getAge)
                 .average().orElse(0);
         System.out.println("평균 = " + avg);
+
+        // 평균 구하기
+        double v = list.stream()
+                .mapToInt(x -> x.getAge())
+                .average()
+                .getAsDouble();
+        System.out.println("v = " + v);
     }
 }
