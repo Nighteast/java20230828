@@ -6,7 +6,10 @@ public class C19throws {
     }
 
     public static void method1() throws ClassNotFoundException {
+        System.out.println("code1");
         method2();
+        System.out.println("code2"); // 이 메서드를 호출해야 한다면 try-catch를 써야한다.
+
     }
 
     public static void method2() throws ClassNotFoundException {
