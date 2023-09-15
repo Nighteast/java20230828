@@ -9,9 +9,8 @@ public class C09read {
     public static void main(String[] args) {
         String file = "C:/Temp/out3.txt";
         try (InputStream is = new FileInputStream(file)) {
+
             byte[] b = new byte[3];
-            is.read(b);
-            System.out.println("Arrays.toString(b) = " + Arrays.toString(b));
 
             is.read(b);
             System.out.println("Arrays.toString(b) = " + Arrays.toString(b));
@@ -21,6 +20,10 @@ public class C09read {
 
             is.read(b);
             System.out.println("Arrays.toString(b) = " + Arrays.toString(b));
+
+            is.read(b);
+            System.out.println("Arrays.toString(b) = " + Arrays.toString(b));
+
         } catch (IOException e) {
             e.printStackTrace();
         }
