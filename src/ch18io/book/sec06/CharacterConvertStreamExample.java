@@ -7,6 +7,7 @@ public class CharacterConvertStreamExample {
         write("문자 변환 스트림을 사용합니다.");
         String data = read();
         System.out.println(data);
+
     }
     public static void write(String str) throws Exception {
         OutputStream os = new FileOutputStream("C:/Temp/test.txt");
