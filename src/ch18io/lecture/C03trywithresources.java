@@ -82,11 +82,11 @@ public class C03trywithresources {
     }
 
     public void method6() throws IOException {
-        // 안좋은 코드임...
+        // 안좋은 코드임..,
         FileOutputStream fos = new FileOutputStream("");
         FileInputStream fis = new FileInputStream("");
 
-        fos.write(33);
+        fos.write(33);  //여기서 예외가 발생하면 꼭 실행해야 하는 코드가 실행되지 않고 예외가 던져져 버린다.
         fis.read();
 
         fos.close();
