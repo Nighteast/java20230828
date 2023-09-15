@@ -10,12 +10,11 @@ public class C06write {
 
         try (OutputStream os = new FileOutputStream(path)) {
 
-            byte[] b = {65, 66, 67, 68, 69, 83, 69, 88};    //ascii code ABCDE
+            byte[] b = {65, 66, 67, 68, 69};    //ascii code ABCDE
 
             os.write(b);                // 65, 66, 67, 68, 69
             os.write(b, 0, 3);  // 65, 66, 67
             os.write(b, 2, 2);  // 67, 68
-            os.write(b, 5, 3);  // ??
 
             os.flush();
         } catch (IOException e) {
